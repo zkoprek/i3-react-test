@@ -4,7 +4,7 @@ export default function Navbar () {
     return (
         <nav className="navbar">
         <ul className="flex">
-          <li>
+          <li className="not">
             Annual report
           </li>
           <li>

@@ -26,9 +26,9 @@ body {
         border-radius: 40px;
         outline: none;
         border: none;
-        cursor: pointer;
 
-        &:hover{
+        &:hover:not(.not){
+            cursor: pointer;
             transition: all 0.3s ease-out;
             background: rgb(255, 255, 255);
             transition: 800ms;

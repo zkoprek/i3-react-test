@@ -29,10 +29,10 @@ body {
   border-radius: 40px;
   outline: none;
   border: none;
-  cursor: pointer;
 }
 
-.flex > li:hover {
+.flex > li:hover:not(.not) {
+  cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   background: white;
