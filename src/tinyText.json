@@ -1,0 +1,20 @@
+[
+    {
+        "class": "threeDivEach fadein2nd",
+        "firstWord": "Investing",
+        "text": " over $440 million over 40 years in alternatives to animal testing, our researcher pionerring over 25 non-animal methods, publishing more than 1,000 scientific articles.",
+        "img": "jupiter.jpg"
+    },
+    {
+        "class": "threeDivEach fadein3rd",
+        "firstWord": "Partnering",
+        "text": " with leading international animal welfare organizations, academia and industry coalitionsto promote use of non-animal, curelty-free methods around the world.",
+        "img": "neptune.jpg"
+    },
+    {
+        "class": "threeDivEach fadein4th",
+        "firstWord": "Advocating",
+        "text": " for public use of non-animal methods and adoption by scientists and policy makers around the world for over 25 years.",
+        "img": "uranus.jpg"
+    }
+]

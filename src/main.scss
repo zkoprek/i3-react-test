@@ -1,0 +1,248 @@
+@import 'functions';
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    margin-right: 50px;
+    justify-content: center;
+    list-style:none;
+
+    & > li {
+        @include awayTB(10px);
+        @include awayLR(30px);
+
+        padding: 8px 20px;
+
+        border-radius: 40px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover{
+            transition: all 0.3s ease-out;
+            background: rgb(255, 255, 255);
+            transition: 800ms;
+        }
+    }
+}
+
+.flexMobile {
+    display: flex;
+    flex-direction: column;
+    list-style:none;
+
+    & > li {
+        @include awayTB(10px);
+        margin-right: 40px;
+        padding: 8px 20px;
+        cursor: pointer;
+        background: rgb(255, 255, 255);
+
+    }
+}
+
+.navbar {
+    font-family: arial;
+    font-size: 25px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, rgb(165, 196, 255) , rgb(242, 247, 255), rgb(165, 196, 255));
+    border-radius: 40px;
+    margin-top: 30px;
+}
+
+.mobileNavbar {
+    animation: fadeinmobile 0.5s ease-out;
+    width: 420px;
+    font-family: arial;
+    font-size: 25px;
+    font-weight: 500;
+    background-color:rgb(165, 196, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.shortMenu {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(165, 196, 255);
+    max-width: 400px;
+}
+
+.PGimg {
+    @include awayLR(50px);
+    position: relative;
+    top: -48px;
+    margin-bottom: -60px;
+    width: 80px;
+}
+
+.dataImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+}
+
+.dataDiv {
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    & > .eachData {
+        margin: 0 auto;
+    }
+}
+
+.divPageTwo {
+    justify-content: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.leftSide {
+    max-width: 550px;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.txtLeftTop{
+    display: block;
+    transition: display 1s;
+}
+
+.rightSide {
+    max-width: 550px;
+}
+
+.threeImgDiv {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+.threeImgs, .threeDivEach {
+    width:170px;
+}
+
+.txtThreeImg {
+    font-size: 15px;
+}
+
+.boldTxt {
+    font-weight: bold;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-left: 10px;
+}
+
+.up {
+    @include arrows(2.5px,-135deg,-135deg);
+}
+  
+.down {
+    @include arrows(7px,45deg,45deg);
+}
+
+.arrowLeft, .arrowRight{
+    &:hover {
+        color: blue;
+    }
+    color: rgb(137, 169, 236);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.dots {
+    color: rgb(137, 169, 236);
+    width: 70px;
+    margin: auto;
+    font-size: 70px;
+}
+
+.coloredDot {
+    color: blue;
+}
+
+@media (max-width: 1325px) {
+    .divPageTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .leftSide {
+        width: 300px;
+    }
+
+    .threeImgDiv {
+        width: 300px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .threeImgs, .threeDivEach {
+        width:130px;
+    }
+
+    .rightSide {
+        width: 300px;
+    }
+}
+
+.fadein1st {
+    animation: fadein1st 0.9s ease-out;
+}
+
+.fadein2nd {
+    animation: fadein2nd 1s ease-out;
+}
+
+.fadein3rd {
+    animation: fadein3rd 1.5s ease-out;
+}
+
+.fadein4th {
+    animation: fadein4th 2s ease-out;
+}
+
+@include fadeinmobile();
+@include fadein1st();
+@include fadein2nd();
+@include fadein3rd();
+@include fadein4th();
+
+
+

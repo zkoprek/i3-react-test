@@ -1,0 +1,17 @@
+[
+    {
+        "class" : "eachData fadein1st",
+        "text": "Earth, 3rd closest planet to the Sun",
+        "img": "earth.jpg" 
+    },
+    {
+        "class" : "eachData fadein2nd",
+        "text": "Mars, 4nd closest planet to the Sun",
+        "img": "mars.jpg"
+    },
+    {
+        "class" : "eachData fadein3rd",
+        "text": "Mercury, closest planet to the Sun",
+        "img": "mercury.jpg"
+    }
+]
